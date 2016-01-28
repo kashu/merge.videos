@@ -19,3 +19,6 @@
 * 只要能用youtube-dl下载下来的视频，理论上都可合并（此处指同一格式视频文件）
 * 列在/tmp/finished_file_name.tmp中的文件，将不会再执行合并（此文件自动生成）
 * 已被合并过的原文件将会移动到当前路径下的finished._.file文件夹中保留
+
+## 扩展体验：
+https://github.com/kashu/ydl.sh
