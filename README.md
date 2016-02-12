@@ -21,6 +21,12 @@
 * 仅合并视频，不会对视频进行转码，属于“无损合并”，速度是最快的！
 * 列在/tmp/finished_file_name.tmp中的文件，将不会再执行合并（此文件自动产生）
 * 已被合并过的原文件将会移动到当前路径下的finished._.file文件夹中保留
+* 可以处理文件名中带有特殊字符的视频文件
+
+## 使用效果截图
+![](http://ww2.sinaimg.cn/large/9c4ddab1jw1f0x1am4k1yj20ix0l6dt7.jpg)
+
+![](http://ww2.sinaimg.cn/large/9c4ddab1jw1f0x1c1xyjbj20ix0l6juz.jpg)
 
 ## 其它
 https://github.com/kashu/ydl.sh
