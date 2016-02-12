@@ -1,7 +1,7 @@
 #!/bin/bash
 #Author: kashu
 #My Website: https://kashu.org
-#Date: 2016-01-29
+#Date: 2016-02-13
 #Filename: merge.videos.sh
 #Description: Merge video files that downloaded via youtube-dl
 
@@ -21,15 +21,15 @@ finished=/tmp/finished_file_name.tmp
 :>$input_file
 
 mkdir finished._.file &> /dev/null
-
+set -x
 for F in *_part*; do
 	prename1="${F%_part*}"
-	count=`ls *_part* | grep -c "$prename1"`
+	count=`ls *_part* | grep -Fc "$prename1"`
 	if [ ${count} -le 1 ]; then
 		continue
 	fi
-	if ! cat $name_list | grep -sqm1 "$F"; then
-		ls --sort version *_part* | grep "$prename1" >> $name_list
+	if ! cat $name_list | grep -Fsqm1 "$F"; then
+		ls --sort version *_part* | grep -F "$prename1" >> $name_list
 	fi
 done
 
@@ -39,9 +39,9 @@ cat $name_list | while read line; do
 	prename3="${line%-*}"
 	name="${line%-*}${suffix}"
 	if [ -s "$finished" ]; then
-		cat $finished | grep -sq "$prename3" && continue
+		cat $finished | grep -Fsq "$prename3" && continue
 	fi
-	cat $name_list | grep "$prename2" > $input_file
+	cat $name_list | grep -F "$prename2" > $input_file
 	sed -i "s/^/file '/g" $input_file
 	sed -i "s/$/\'/g" $input_file
 	if [ -s "${name}" ]; then
