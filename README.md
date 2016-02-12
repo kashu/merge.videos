@@ -24,9 +24,7 @@
 * 可以处理文件名中带有特殊字符的视频文件
 
 ## 使用效果截图
-![](http://ww2.sinaimg.cn/large/9c4ddab1jw1f0x1am4k1yj20ix0l6dt7.jpg)
-
-![](http://ww2.sinaimg.cn/large/9c4ddab1jw1f0x1c1xyjbj20ix0l6juz.jpg)
+![](http://ww2.sinaimg.cn/large/9c4ddab1jw1f0x1khqs9lg20ix0l6tde.gif)
 
 ## 其它
 https://github.com/kashu/ydl.sh
