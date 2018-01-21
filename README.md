@@ -1,4 +1,4 @@
-# 自动批量合并视频文件 ( Auto Merge Video Files)
+# （现在好像不用这样做，youtube-dl自动合并了）自动批量合并视频文件 ( Auto Merge Video Files)
 
 ## 如何使用 (How to use)
 使用youtube-dl下载到的多个零散视频，可能会像下面这个样子，此时想合并成一个完整的视频
